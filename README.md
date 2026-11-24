@@ -34,14 +34,17 @@ A lightweight, standalone single-file HUD widget for Windows (`PCVitalsWidget.ex
 
 ## Quick Start
 
-1. **Download or clone the repository:**
-   ```bash
-   git clone https://github.com/felipematheuslo/pc-vitals-widget.git
-   cd pc-vitals-widget
-   ```
-2. **Run the widget:**
-   Double-click **`PCVitalsWidget.exe`** and accept the Windows UAC Administrator prompt.
-   > **Note:** Because `PCVitalsWidget.exe` embeds all required libraries, you can also copy `PCVitalsWidget.exe` by itself to your Desktop or any folder and run it standalone.
+### Option 1 — Download `PCVitalsWidget.exe` Directly (Recommended)
+1. Download **[`PCVitalsWidget.exe`](https://github.com/felipematheuslo/pc-vitals-widget/raw/main/PCVitalsWidget.exe)** (or grab it from the [Releases](https://github.com/felipematheuslo/pc-vitals-widget/releases) page).
+2. Double-click **`PCVitalsWidget.exe`** and accept the Windows UAC Administrator prompt.
+   > **Note:** `PCVitalsWidget.exe` is 100% standalone — all required libraries are embedded inside the single `.exe` file, so you can place it on your Desktop or any folder and run it directly.
+
+### Option 2 — Clone the Repository
+```bash
+git clone https://github.com/felipematheuslo/pc-vitals-widget.git
+cd pc-vitals-widget
+.\PCVitalsWidget.exe
+```
 
 ---
 
