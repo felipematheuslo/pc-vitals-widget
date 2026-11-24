@@ -1,6 +1,3 @@
-__pycache__/
-*.pyc
 config.json
-lib/sensor_reader_new.exe
+*.sys
 lib/*.sys
-
