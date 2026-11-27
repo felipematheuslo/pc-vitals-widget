@@ -2,7 +2,7 @@
 
 A lightweight, standalone single-file HUD widget for Windows (`PCVitalsWidget.exe`, < 1 MB) that displays real-time **CPU**, **GPU**, **VRAM**, and **RAM** vitals in the corner of your screen.
 
-![Version](https://img.shields.io/badge/version-1.1.0-2EA043?style=flat-square)
+![Version](https://img.shields.io/badge/version-1.1.1-2EA043?style=flat-square)
 ![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11%20(x64)-0078D6?style=flat-square)
 ![Runtime](https://img.shields.io/badge/.NET%20Framework-4.7.2%2B%20(built--in)-512BD4?style=flat-square)
 
@@ -34,7 +34,7 @@ A lightweight, standalone single-file HUD widget for Windows (`PCVitalsWidget.ex
 
 ## Quick Start
 
-[![Download PCVitalsWidget.exe](https://img.shields.io/badge/%E2%AC%87%20Download-PCVitalsWidget.exe%20(v1.1.0)-2EA043?style=for-the-badge)](https://github.com/felipematheuslo/pc-vitals-widget/raw/main/PCVitalsWidget.exe)
+[![Download PCVitalsWidget.exe](https://img.shields.io/badge/%E2%AC%87%20Download-PCVitalsWidget.exe%20(v1.1.1)-2EA043?style=for-the-badge)](https://github.com/felipematheuslo/pc-vitals-widget/raw/main/PCVitalsWidget.exe)
 
 1. Download **[`PCVitalsWidget.exe`](https://github.com/felipematheuslo/pc-vitals-widget/raw/main/PCVitalsWidget.exe)** (or from the [Releases](https://github.com/felipematheuslo/pc-vitals-widget/releases) page).
 2. Double-click **`PCVitalsWidget.exe`** and accept the Windows UAC Administrator prompt.

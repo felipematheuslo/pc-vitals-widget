@@ -16,8 +16,8 @@ using LibreHardwareMonitor.Hardware;
 
 [assembly: AssemblyTitle("PC Vitals Widget")]
 [assembly: AssemblyProduct("pc-vitals-widget")]
-[assembly: AssemblyVersion("1.1.0.0")]
-[assembly: AssemblyFileVersion("1.1.0.0")]
+[assembly: AssemblyVersion("1.1.1.0")]
+[assembly: AssemblyFileVersion("1.1.1.0")]
 
 namespace PcVitalsWidget
 {
@@ -696,13 +696,13 @@ namespace PcVitalsWidget
                 DrawText(g, gpuT, _fontTempCompact, TempColor(d.GpuTemp), w - 13f, 56f, true);
 
                 string vramU = d.VramPct.HasValue ? d.VramPct.Value.ToString("0", CultureInfo.InvariantCulture) + "%" : "--%";
-                string vramGb = d.VramUsedGb.HasValue ? d.VramUsedGb.Value.ToString("0.1", CultureInfo.InvariantCulture) + "G" : "";
+                string vramGb = d.VramUsedGb.HasValue ? d.VramUsedGb.Value.ToString("0.0", CultureInfo.InvariantCulture) + "GB" : "";
                 DrawText(g, "VRAM", _fontSub, AccentGpu, 13f, 78f);
                 DrawText(g, vramGb, _fontSub, TextSub, 58f, 78f);
                 DrawText(g, vramU, _fontTempCompact, UsageColor(d.VramPct), w - 13f, 78f, true);
 
                 string ramU = d.RamPct.HasValue ? d.RamPct.Value.ToString("0", CultureInfo.InvariantCulture) + "%" : "--%";
-                string ramGb = d.RamUsedGb.HasValue ? d.RamUsedGb.Value.ToString("0.1", CultureInfo.InvariantCulture) + "G" : "";
+                string ramGb = d.RamUsedGb.HasValue ? d.RamUsedGb.Value.ToString("0.0", CultureInfo.InvariantCulture) + "GB" : "";
                 DrawText(g, "RAM", _fontLabel, AccentRam, 13f, 100f);
                 DrawText(g, ramGb, _fontSub, TextSub, 58f, 100f);
                 DrawText(g, ramU, _fontTempCompact, UsageColor(d.RamPct), w - 13f, 100f, true);
@@ -723,13 +723,13 @@ namespace PcVitalsWidget
 
             // 2. GPU Sub-card
             string vramSub = (d.VramUsedGb.HasValue && d.VramTotalGb.HasValue)
-                ? string.Format(CultureInfo.InvariantCulture, "{0:0.1}/{1:0}G", d.VramUsedGb.Value, d.VramTotalGb.Value)
+                ? string.Format(CultureInfo.InvariantCulture, "{0:0.0}/{1:0}GB", d.VramUsedGb.Value, d.VramTotalGb.Value)
                 : "";
             DrawComponentGroup(g, 111f, w, "GPU", AccentGpu, d.GpuTemp, d.GpuLoad, d.VramPct, vramSub);
 
             // 3. RAM Sub-card
             string ramSub = (d.RamUsedGb.HasValue && d.RamTotalGb.HasValue)
-                ? string.Format(CultureInfo.InvariantCulture, "{0:0.1}/{1:0}G", d.RamUsedGb.Value, d.RamTotalGb.Value)
+                ? string.Format(CultureInfo.InvariantCulture, "{0:0.0}/{1:0}GB", d.RamUsedGb.Value, d.RamTotalGb.Value)
                 : "";
             DrawRamGroup(g, 218f, w, ramSub, d.RamPct);
         }
